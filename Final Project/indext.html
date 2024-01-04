@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Web Side</title>
+    <link rel="stylesheet" href="indext.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="indext.js"></script>
+</head>
+<body>
+    <div class="img">
+
+    <CENTER ><i> MY WEB SİDE</i></CENTER>
+    <div class="navbar">
+       <ul>
+
+     <li class="active" >  <a href="indext.html"><i class="fa-solid fa-house"></i> Anasyafa</a></li>  
+      <li> <a href=""> <i class="fas fa-user"></i>  Hakımızda</a>
+     <div class="sub-menu-1">
+       <ul>
+        <li><a href="">Müsyonumuz</a></li>
+        <li><a href="">Vizyonumuz</a></li>
+        <li><a href="">Takımımız</a></li>
+       </ul>
+     </div>
+
+    </li> 
+      <li><a href=""><i class="fas fa-clone"></i>Servisler</a>
+         <div class="sub-menu-1">
+         <ul>
+         <li><a href="">WEB TASARIM</a></li>
+         <li class="hover-me" ><a href="">MARKEET</a> <i class="fas fa-caret-right"></i>
+        <div class="sub-menu-2">
+          <ul>
+            <li><a href="">SEO</a></li>
+            <li><a href="">Sosyal Medya</a></li>
+            <li><a href="">Emali</a></li>
+          </ul>
+        </div>
+    </li>
+         <li class="hover-me" ><a href="">MOBİLE APP</a> <i class="fas fa-caret-right"></i>
+        <div class="sub-menu-2">
+            <ul>
+                <li><a href="">Android app</a></li>
+                <li><a href="">İOS ap</a></li>
+                <li><a href="">Windows app</a></li>
+                <li><a href="">flutter app</a></li>
+                <li><a href="">unity app</a></li>
+            </ul>
+        </div>
+        </li>
+         </ul>
+     </div>
+    </li> 
+      <li><a class="left" href=""><i class="fas fa-users"></i>Müşteriler</a></li>
+      <li> <a class="left" href=""> <i class="fas fa-headset"></i>DESTEK</a></li>
+      <li> <a class="left" href="https://ticaret.gov.tr/haberler/ticaret-bakanligi-yiyecek-icecek-hizmeti-sunan-isyerlerinin-tarife-ve-fiyat-listelerine-yeni-duzenlemeler-getirdi"><i class="fas fa-lira-sign"></i>FİYATLANDIRMA </a></li>
+      <li> <a class="left" href=""><i class="fas fa-edit"></i>EĞİTİM </a></li>
+      <li> <a class="left" href=""><i class="fas fa-phone"></i>İLETİŞİM </a></li>
+      
+    </ul>
+    </div>
+    <div class="anadiv">
+      <div class="divider"></div>   
+      <div class="sepet">
+        <h1>Sepet</h1>
+        
+        <ul id="sepetListesi"> </ul>
+        
+        
+        <div class="divider"></div>   
+      
+        <span  id="totalPrice">Total Price: 0 TL </span>
+        <i style="font-size: 18px;" class="fa-solid fa-cart-shopping"></i>
+        <div>
+            <button id="addToCartBtn" onclick="satınAl()">Buy</button>
+        </div>
+      
+       
+    </div>
+        <div class="divider"></div>   
+        <div class="content">
+            <div class="category">
+              <center class="category-header">Categoris</center> 
+              <ul>
+                <li><a href="araba.html">Car</a><i class="fas fa-car"></i> </li>
+                <li><a href="Computer.html">Computer</a><i class="fa-solid fa-computer"></i> </li>
+                <li><a href="Phone.html">Mobile Phone</a><i class="fa-solid fa-mobile-screen-button"></i> </li>
+                <li><a href="javascript:void(0);" onclick="showNoProductsMessage()">CAMERA</a><i class="fa-solid fa-camera"></i> </li>
+                <!-- <li><a href="">FOTOĞRAF MAKİNESİ </a><i class="fa-solid fa-camera"></i> </li> -->
+                <li><a href="household appliances.HTML">Household products</a><i class="fa-solid fa-blender-phone"></i>  </li>
+              </ul>
+            </div>
+            
+            <div class="divider"></div>   
+            <!-- burası dik çizgi çekiyor -->
+            <div class="product">
+                <center class="category-header">Products</center> 
+              <table class="table" >
+                <colgroup>
+                    <col style="width: 50%; max-width: 50%;">
+                    <col style="width: 50%; max-width: 50%;">
+                </colgroup>
+                <tr  >
+                    <td>
+                        <!-- <img src="resimler/indir.jpg" alt="" class="araba-img"> -->
+                        <img src="resimler/indir-removebg-preview.png" alt="" id="productImage" class="araba-img"> 
+                        <!-- <h3>Product information:</h3>  -->
+                        <h3  id="productName1"> Multiple Child's Toy  <i class="fa-solid fa-gamepad"></i> </h3> 
+                      <strong>  <p style="font-size: 25px;">Price: <span id="productPrice1">100 Tl</span> <i class="fa-solid fa-money-bill-trend-up"></i> </p> </strong>
+
+                        <ul style="list-style-type: none;">
+                            <li>
+                                <strong>Location:</strong><br>
+                                <a style="   text-decoration: none; color:black "  href=
+                                "https://www.google.com/maps/place/Mezitli%2FMersin/@36.830554,34.0686553,10z/data=!3m1!4b1!4m6!3m5!1s0x14d80cb812b2c87d:0x54d76ae032f8c30!8m2!3d36.8573692!4d34.3976356!16s%2Fm%2F080ltg1?entry=ttu">
+                                Office: <span style="color: blue;">Mezitli/Mersin</span></a>
+                            </li>
+                            <li>
+                                <strong>Contact:</strong><br>
+                                Email: <a href="https://www.google.com/intl/tr/gmail/about/">bugratoker719@gmail.com</a>
+                            </li>
+                            <li>
+                                <strong>Guarantee:</strong><br>
+                                <i class="fa-solid fa-8"></i> Years
+                            </li>
+                        </ul>
+                       
+                        <button id="addToCartBtn" onclick="addToCart('productName1','productPrice1','resimler/indir-removebg-preview.png')">Sepete Ekle</button>
+                    </td>
+                    <td  >
+                      
+                        <img  src=  "resimler/images-removebg-preview.png" alt="" id="productImage" class="araba-img">
+                        <!-- <h3>TA:</h3> -->
+                        <h3 id="productName2">Battery Car <i class="fa-solid fa-gamepad"></i> </h3>
+                        <p style="font-size: 25px;" >Price: <span id="productPrice2"> 125 Tl</span> <i class="fa-solid fa-money-bill-trend-up"></i> </p>
+                        <ul style="list-style-type: none;">
+                            <li>
+                                <strong>Location:</strong><br>
+                                <a style="   text-decoration: none; color:black" href=
+                                "https://www.google.com/maps/place/Mezitli%2FMersin/@36.830554,34.0686553,10z/data=!3m1!4b1!4m6!3m5!1s0x14d80cb812b2c87d:0x54d76ae032f8c30!8m2!3d36.8573692!4d34.3976356!16s%2Fm%2F080ltg1?entry=ttu">
+                                Office: <span style="color: blue;">Mezitli/Mersin</span></a>
+                            </li>
+                            <li>
+                                <strong>Contact:</strong><br>
+                                Email: <a href="https://www.google.com/intl/tr/gmail/about/">bugratoker719@gmail.com</a>
+                            </li>
+                            <li>
+                                <strong>Guarantee:</strong><br>
+                                <i class="fa-solid fa-6"></i> Years
+                            </li>
+                        </ul>
+                        <button id="addToCartBtn" onclick="addToCart('productName2','productPrice2','resimler/images-removebg-preview.png')">Sepete Ekle</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <img src="resimler/images__1_-removebg-preview.png" id="productImage" class="araba-img">
+                        <!-- <h3>Instructor:</h3>  -->
+                        <h3 id="productName3"> Battery-Powered Car <i class="fa-solid fa-gamepad"></i></h3>
+                        <p style="font-size: 25px;" >Price: <span id="productPrice3">  553 Tl</span><i class="fa-solid fa-money-bill-trend-up"></i> </p>
+                        <ul style="list-style-type: none;">
+                            <li>
+                                <strong>Location:</strong><br>
+                                <a style="   text-decoration: none; color:black" href=
+                                "https://www.google.com/maps/place/Mezitli%2FMersin/@36.830554,34.0686553,10z/data=!3m1!4b1!4m6!3m5!1s0x14d80cb812b2c87d:0x54d76ae032f8c30!8m2!3d36.8573692!4d34.3976356!16s%2Fm%2F080ltg1?entry=ttu">
+                                Office: <span style="color: blue;">Mezitli/Mersin</span></a>
+                            </li>
+                            <li>
+                                <strong>Contact:</strong><br>
+                                Email: <a href="https://www.google.com/intl/tr/gmail/about/">bugratoker719@gmail.com</a>
+                            </li>
+                            <li>
+                                <strong>Guarantee:</strong><br>
+                                <i class="fa-solid fa-1"></i> Years
+                            </li>
+                        </ul>
+                        <button id="addToCartBtn" onclick="addToCart('productName3','productPrice3','resimler/images__1_-removebg-preview.png')">Sepete Ekle</button>
+                    </td>
+                    <td >
+                        <img src="resimler/indir__1_-removebg-preview.png" alt=""  id="productImage" class="araba-img">
+                        <!-- <h3>Instructor:</h3>  -->
+                        <h3 id="productName4">Toy Ambulance Car <i class="fa-solid fa-gamepad"></i></h3>
+                        <p style="font-size: 25px;" >Price: <span  id="productPrice4">  22,9 Tl </span><i class="fa-solid fa-money-bill-trend-up"></i> </p>
+                        <ul style="list-style-type: none;">
+                            <li>
+                                <strong>Location:</strong><br>
+                                <a style="   text-decoration: none; color:black" href=
+                                "https://www.google.com/maps/place/Mezitli%2FMersin/@36.830554,34.0686553,10z/data=!3m1!4b1!4m6!3m5!1s0x14d80cb812b2c87d:0x54d76ae032f8c30!8m2!3d36.8573692!4d34.3976356!16s%2Fm%2F080ltg1?entry=ttu">
+                                Office: <span style="color: blue;">Mezitli/Mersin</span></a>
+                            </li>
+                            <li>
+                                <strong>Contact:</strong><br>
+                                Email: <a href="https://www.google.com/intl/tr/gmail/about/">bugratoker719@gmail.com</a>
+                            </li>
+                            <li>
+                                <strong>Guarantee:</strong><br>
+                                <i class="fa-solid fa-1"></i> Years
+                            </li>
+                        </ul>
+                        <button id="addToCartBtn" onclick="addToCart('productName4','productPrice4','resimler/indir__1_-removebg-preview.png')">Sepete Ekle</button>
+                    </td>
+                    <!-- <td >
+                      <img src="resimler/indir__1_-removebg-preview.png" alt=""  id="productImage" class="araba-img">
+                      <h3>Instructor:</h3> 
+                      <h3 id="productName"></h3>
+                      <p>Fiyat: <span id="productPrice"> 450 </span>Tl </p>
+                      <ul style="list-style-type: none;">
+                          <li>Office: CCB216</li>
+                          <li>Email: example@example.com</li>
+                          <li>Hours: Tues 2-3</li>
+                      </ul>
+                      <button onclick="addToCart('Oyuncak ambulans araba','1259','resimler/indir__1_-removebg-preview.png')">Sepete Ekle</button>
+                  </td> -->
+                </tr>
+                 <!-- //////////////////////////////////////Bilgisayar -->
+                 <tr>               
+                  <td >
+                    <img src="resimler/bilgisayar_1-removebg-preview.png"  id="productImage" class="araba-img">
+                    <!-- <h3>Instructor:</h3>  -->
+                    <h3  id="productName5">Monster Computer <i class="fas fa-computer"></i></h3>
+                    <p style="font-size: 25px;">Fiyat: <span id="productPrice5"> 12900 Tl </span><i class="fa-solid fa-money-bill-trend-up"></i> </p>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <strong>Location:</strong><br>
+                            <a style="   text-decoration: none; color:black" href=
+                            "https://www.google.com/maps/place/Mezitli%2FMersin/@36.830554,34.0686553,10z/data=!3m1!4b1!4m6!3m5!1s0x14d80cb812b2c87d:0x54d76ae032f8c30!8m2!3d36.8573692!4d34.3976356!16s%2Fm%2F080ltg1?entry=ttu">
+                            Office: <span style="color: blue;">Mezitli/Mersin</span></a>
+                        </li>
+                        <li>
+                            <strong>Contact:</strong><br>
+                            Email: <a href="https://www.google.com/intl/tr/gmail/about/">bugratoker719@gmail.com</a>
+                        </li>
+                        <li>
+                            <strong>Guarantee:</strong><br>
+                            <i class="fa-solid fa-1"></i> Years
+                        </li>
+                    </ul>
+                    <button id="addToCartBtn" onclick="addToCart('productName5','productPrice5','resimler/bilgisayar_1-removebg-preview.png')">Sepete Ekle</button>
+                </td>
+                <td >
+                  <img src="resimler/bilgisayar2-removebg-preview.png" alt=""  id="productImage" class="araba-img">
+                  <!-- <h3>Instructor:</h3>  -->
+                  <h3 id="productName6">Acer Computer <i class="fas fa-computer"></i></h3>
+                  <p style="font-size: 25px;">Price: <span id="productPrice6">10900 Tl </span><i class="fa-solid fa-money-bill-trend-up"></i> </p>
+                   <ul style="list-style-type: none;">
+                <li>
+                    <strong>Location:</strong><br>
+                   <a style="   text-decoration: none; color:black" href="https://www.google.com/maps/place/Mezitli%2FMersin/@36.830554,34.0686553,10z/data=!3m1!4b1!4m6!3m5!1s0x14d80cb812b2c87d:0x54d76ae032f8c30!8m2!3d36.8573692!4d34.3976356!16s%2Fm%2F080ltg1?entry=ttu">   Office: <span style="color: blue;">Mezitli/Mersin</span></a>
+                </li>
+                <li>
+                    <strong>Contact:</strong><br>
+                    Email: <a href="https://www.google.com/intl/tr/gmail/about/">bugratoker719@gmail.com</a>
+                </li>
+                <li>
+                    <strong>Guarantee:</strong><br>
+                    <i class="fa-solid fa-1"></i> Years
+                </li>
+            </ul>
+                  <button id="addToCartBtn" onclick="addToCart('productName6','productPrice6','resimler/bilgisayar2-removebg-preview.png')">Sepete Ekle</button>
+              </td>
+            </tr>
+            <tr>
+
+           
+              <td >
+                <img src="resimler/bilgisayr3-removebg-preview.png" alt=""  id="productImage" class="araba-img">
+                <!-- <h3>Instructor:</h3>  -->
+                <h3 id="productName7">Dell Computer <i class="fas fa-computer"></i> </h3>
+                <p style="font-size: 25px;">Price: <span id="productPrice7"> 8500 Tl </span><i class="fa-solid fa-money-bill-trend-up"></i> </p>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <strong>Location:</strong><br>
+                       <a style="   text-decoration: none; color:black" href="https://www.google.com/maps/place/Mezitli%2FMersin/@36.830554,34.0686553,10z/data=!3m1!4b1!4m6!3m5!1s0x14d80cb812b2c87d:0x54d76ae032f8c30!8m2!3d36.8573692!4d34.3976356!16s%2Fm%2F080ltg1?entry=ttu">  Office: <span style="color: blue;">Mezitli/Mersin</span></a>
+                    </li>
+                    <li>
+                        <strong>Contact:</strong><br>
+                        Email: <a href="https://www.google.com/intl/tr/gmail/about/">bugratoker719@gmail.com</a>
+                    </li>
+                    <li>
+                        <strong>Guarantee:</strong><br>
+                        <i class="fa-solid fa-1"></i> Years
+                    </li>
+                </ul>
+                   
+                <button id="addToCartBtn" onclick="addToCart('productName7','productPrice7','resimler/bilgisayr3-removebg-preview.png')">Sepete Ekle</button>
+            </td>
+            <td >
+              <img src="resimler/bilgisayar4-removebg-preview.png" alt=""  id="productImage" class="araba-img">
+              <h3>Instructor:</h3> 
+              <h3 id="productName8">Assus <i class="fas fa-computer"></i></h3>
+              <p style="font-size: 25px;" >Price: <span id="productPrice8"> 15000 Tl</span> <i class="fa-solid fa-money-bill-trend-up"></i> </p>
+              <ul style="list-style-type: none;">
+                <li>
+                    <strong>Location:</strong><br>
+                   <a style="   text-decoration: none; color:black" href="https://www.google.com/maps/place/Mezitli%2FMersin/@36.830554,34.0686553,10z/data=!3m1!4b1!4m6!3m5!1s0x14d80cb812b2c87d:0x54d76ae032f8c30!8m2!3d36.8573692!4d34.3976356!16s%2Fm%2F080ltg1?entry=ttu">   Office: <span style="color: blue;">Mezitli/Mersin</span></a>
+                </li>
+                <li>
+                    <strong>Contact:</strong><br>
+                    Email: <a href="https://www.google.com/intl/tr/gmail/about/">bugratoker719@gmail.com</a>
+                </li>
+                <li>
+                    <strong>Guarantee:</strong><br>
+                    <i class="fa-solid fa-1"></i> Years
+                </li>
+            </ul>
+              <button id="addToCartBtn" onclick="addToCart('productName8','productPrice8','resimler/bilgisayar4-removebg-preview.png')">Sepete Ekle</button>
+          </td>
+          </tr>
+          <!-- //////////////////////////////////////Telefon -->
+          <tr>               
+           <td >
+             <img src="resimler/telefon1-removebg-preview.png"  id="productImage" class="araba-img">
+             <!-- <h3>Instructor:</h3>  -->
+             <h3 id="productName9">Iphone 11 <i class="fa-solid fa-mobile-screen-button"></i></h3>
+             <p style="font-size: 25px;"> Price: <span id="productPrice9">23500 Tl</span><i class="fa-solid fa-money-bill-trend-up"></i> </p>
+             <ul style="list-style-type: none;">
+                <li>
+                    <strong>Location:</strong><br>
+                   <a style="   text-decoration: none; color:black" href="https://www.google.com/maps/place/Mezitli%2FMersin/@36.830554,34.0686553,10z/data=!3m1!4b1!4m6!3m5!1s0x14d80cb812b2c87d:0x54d76ae032f8c30!8m2!3d36.8573692!4d34.3976356!16s%2Fm%2F080ltg1?entry=ttu">   Office: <span style="color: blue;">Mezitli/Mersin</span></a>
+                </li>
+                <li>
+                    <strong>Contact:</strong><br>
+                    Email: <a href="https://www.google.com/intl/tr/gmail/about/">bugratoker719@gmail.com</a>
+                </li>
+                <li>
+                    <strong>Guarantee:</strong><br>
+                    <i class="fa-solid fa-1"></i> Years
+                </li>
+            </ul>
+             <button id="addToCartBtn" onclick="addToCart('productName9','productPrice9','resimler/telefon1-removebg-preview.png')">Sepete Ekle</button>
+         </td>
+         <td >
+           <img src="resimler/telefon2-removebg-preview.png" alt=""  id="productImage" class="araba-img">
+           <!-- <h3>Instructor:</h3>  -->
+           <h3 id="productName10">Iphone 15 ProMax <i class="fa-solid fa-mobile-screen-button"></i></h3>
+           <p style="font-size: 25px;">Price: <span id="productPrice10"> 50000 Tl </span><i class="fa-solid fa-money-bill-trend-up"></i> </p>
+           <ul style="list-style-type: none;">
+            <li>
+                <strong>Location:</strong><br>
+               <a style="   text-decoration: none; color:black" href="https://www.google.com/maps/place/Mezitli%2FMersin/@36.830554,34.0686553,10z/data=!3m1!4b1!4m6!3m5!1s0x14d80cb812b2c87d:0x54d76ae032f8c30!8m2!3d36.8573692!4d34.3976356!16s%2Fm%2F080ltg1?entry=ttu">   Office: <span style="color: blue;">Mezitli/Mersin</span></a>
+            </li>
+            <li>
+                <strong>Contact:</strong><br>
+                Email: <a href="https://www.google.com/intl/tr/gmail/about/">bugratoker719@gmail.com</a>
+            </li>
+            <li>
+                <strong>Guarantee:</strong><br>
+                <i class="fa-solid fa-1"></i> Years
+            </li>
+        </ul>
+           <button id="addToCartBtn" onclick="addToCart('productName10','productPrice10','resimler/telefon2-removebg-preview.png')">Sepete Ekle</button>
+       </td>
+     </tr> 
+            
+     <tr>               
+      <td >
+        <img src="resimler/telefon3-removebg-preview.png"  id="productImage" class="araba-img">
+        <!-- <h3>Instructor:</h3>  -->
+        <h3 id="productName11">Nokia 3310 <i class="fa-solid fa-mobile-screen-button"></i></h3>
+        <p style="font-size: 25px;">Price: <span id="productPrice11"> 1000 Tl</span><i class="fa-solid fa-money-bill-trend-up"></i> </p>
+        <ul style="list-style-type: none;">
+            <li>
+                <strong>Location:</strong><br>
+               <a style="   text-decoration: none; color:black" href="https://www.google.com/maps/place/Mezitli%2FMersin/@36.830554,34.0686553,10z/data=!3m1!4b1!4m6!3m5!1s0x14d80cb812b2c87d:0x54d76ae032f8c30!8m2!3d36.8573692!4d34.3976356!16s%2Fm%2F080ltg1?entry=ttu">  Office: <span style="color: blue;">Mezitli/Mersin</span></a>
+            </li>
+            <li>
+                <strong>Contact:</strong><br>
+                Email: <a href="https://www.google.com/intl/tr/gmail/about/">bugratoker719@gmail.com</a>
+            </li>
+            <li>
+                <strong>Guarantee:</strong><br>
+                <i class="fa-solid fa-1"></i> Years
+            </li>
+        </ul>
+        <button id="addToCartBtn" onclick="addToCart('productName11','productPrice11','resimler/telefon3-removebg-preview.png')">Sepete Ekle</button>
+    </td>
+    <td >
+      <img src="resimler/telefon4-removebg-preview.png" alt=""  id="productImage" class="araba-img">
+      <!-- <h3>Instructor:</h3>  -->
+      <h3 id="productName16">Samsung A32 <i class="fa-solid fa-mobile-screen-button"></i></h3>
+      <p style="font-size: 25px;">Price: <span id="productPrice16"> 4500 Tl  </span> <i class="fa-solid fa-money-bill-trend-up"></i> </p>
+      <ul style="list-style-type: none;">
+        <li>
+            <strong>Location:</strong><br>
+           <a style="   text-decoration: none; color:black" href="https://www.google.com/maps/place/Mezitli%2FMersin/@36.830554,34.0686553,10z/data=!3m1!4b1!4m6!3m5!1s0x14d80cb812b2c87d:0x54d76ae032f8c30!8m2!3d36.8573692!4d34.3976356!16s%2Fm%2F080ltg1?entry=ttu">  Office: <span style="color: blue;">Mezitli/Mersin</span></a>
+        </li>
+        <li>
+            <strong>Contact:</strong><br>
+            Email: <a href="https://www.google.com/intl/tr/gmail/about/">bugratoker719@gmail.com</a>
+        </li>
+        <li>
+            <strong>Guarantee:</strong><br>
+            <i class="fa-solid fa-1"></i> Years
+        </li>
+    </ul>
+      <button id="addToCartBtn" onclick="addToCart('productName16','productPrice16','resimler/telefon4-removebg-preview.png')">Sepete Ekle</button>
+      </td>
+     </tr>
+     <!-- //////////////////////////////////////Ev Aletleri -->
+     <tr>               
+      <td >
+        <img src="resimler/spürge1-removebg-preview.png"  id="productImage" class="araba-img">
+        <!-- <h3>Instructor:</h3>  -->
+        <h3 id="productName12">Dyson <i class="fa-solid fa-broom"></i></h3>
+        <p style="font-size: 25px;">Price: <span id="productPrice12"> 5000 Tl </span> <i class="fa-solid fa-money-bill-trend-up"></i></p>
+        <ul style="list-style-type: none;">
+            <li>
+                <strong>Location:</strong><br>
+               <a style="   text-decoration: none; color:black" href="https://www.google.com/maps/place/Mezitli%2FMersin/@36.830554,34.0686553,10z/data=!3m1!4b1!4m6!3m5!1s0x14d80cb812b2c87d:0x54d76ae032f8c30!8m2!3d36.8573692!4d34.3976356!16s%2Fm%2F080ltg1?entry=ttu">  Office: <span style="color: blue;">Mezitli/Mersin</span></a>
+            </li>
+            <li>
+                <strong>Contact:</strong><br>
+                Email: <a href="https://www.google.com/intl/tr/gmail/about/">bugratoker719@gmail.com</a>
+            </li>
+            <li>
+                <strong>Guarantee:</strong><br>
+                <i class="fa-solid fa-1"></i> Years
+            </li>
+        </ul>
+        <button id="addToCartBtn" onclick="addToCart('productName12','productPrice12','resimler/spürge1-removebg-preview.png')">Sepete Ekle</button>
+    </td>
+    <td >
+      <img src="resimler/koltuk1-removebg-preview.png" alt=""  id="productImage" class="araba-img">
+      <!-- <h3>Instructor:</h3>  -->
+      <h3 id="productName13">4'lü Takım koltuk <i class="fa-solid fa-chair"></i></h3>
+      <p style="font-size: 25px;">Price: <span id="productPrice13"> 35000 Tl </span><i class="fa-solid fa-money-bill-trend-up"></i> </p>
+      <ul style="list-style-type: none;">
+        <li>
+            <strong>Location:</strong><br>
+           <a style="   text-decoration: none; color:black" href="https://www.google.com/maps/place/Mezitli%2FMersin/@36.830554,34.0686553,10z/data=!3m1!4b1!4m6!3m5!1s0x14d80cb812b2c87d:0x54d76ae032f8c30!8m2!3d36.8573692!4d34.3976356!16s%2Fm%2F080ltg1?entry=ttu">  Office: <span style="color: blue;">Mezitli/Mersin</span></a>
+        </li>
+        <li>
+            <strong>Contact:</strong><br>
+            Email: <a href="https://www.google.com/intl/tr/gmail/about/">bugratoker719@gmail.com</a>
+        </li>
+        <li>
+            <strong>Guarantee:</strong><br>
+            <i class="fa-solid fa-1"></i> Years
+        </li>
+    </ul>
+      <button id="addToCartBtn" onclick="addToCart('productName13','productPrice13','resimler/koltuk1-removebg-preview.png')">Sepete Ekle</button>
+  </td>
+</tr> 
+
+<tr>               
+ <td >
+   <img src="resimler/blendır1-removebg-preview.png"  id="productImage" class="araba-img">
+   <!-- <h3>Instructor:</h3>  -->
+   <h3 id="productName14">Blendır <i class="fa-solid fa-blender-phone"></i></h3>
+   <p style="font-size: 25px;">Price: <span id="productPrice14"> 450 Tl </span><i class="fa-solid fa-money-bill-trend-up"></i> </p>
+   <ul style="list-style-type: none;">
+    <li>
+        <strong>Location:</strong><br>
+       <a style="   text-decoration: none; color:black" href="https://www.google.com/maps/place/Mezitli%2FMersin/@36.830554,34.0686553,10z/data=!3m1!4b1!4m6!3m5!1s0x14d80cb812b2c87d:0x54d76ae032f8c30!8m2!3d36.8573692!4d34.3976356!16s%2Fm%2F080ltg1?entry=ttu">   Office: <span style="color: blue;">Mezitli/Mersin</span></a>
+    </li>
+    <li>
+        <strong>Contact:</strong><br>
+        Email: <a href="https://www.google.com/intl/tr/gmail/about/">bugratoker719@gmail.com</a>
+    </li>
+    <li>
+        <strong>Guarantee:</strong><br>
+        <i class="fa-solid fa-1"></i> Years
+    </li>
+</ul>
+   <button id="addToCartBtn" onclick="addToCart('productName14','productPrice14','resimler/blendır1-removebg-preview.png')">Sepete Ekle</button>
+</td>
+<td >
+ <img src="resimler/ütü1-removebg-preview.png" alt=""  id="productImage" class="araba-img">
+ <!-- <h3>Instructor:</h3>  -->
+ <h3 id="productName15">Ütü <i class="fa-solid fa-blender-phone"></i></h3>
+ <p style="font-size: 25px;">Price: <span id="productPrice15"> 1250 Tl </span> <i class="fa-solid fa-money-bill-trend-up"></i> </p>
+ <ul style="list-style-type: none;">
+    <li>
+        <strong>Location:</strong><br>
+       <a style="   text-decoration: none; color: black;" href="https://www.google.com/maps/place/Mezitli%2FMersin/@36.830554,34.0686553,10z/data=!3m1!4b1!4m6!3m5!1s0x14d80cb812b2c87d:0x54d76ae032f8c30!8m2!3d36.8573692!4d34.3976356!16s%2Fm%2F080ltg1?entry=ttu"> <p style="color: black;">  Office: Mezitli/Mersin</p></a>
+    </li>
+    <li>
+        <strong>Contact:</strong><br>
+        Email: <a href="https://www.google.com/intl/tr/gmail/about/">bugratoker719@gmail.com</a>
+    </li>
+    <li>
+        <strong>Guarantee:</strong><br>
+        <i class="fa-solid fa-1"></i> Years
+    </li>
+</ul>
+ <button id="addToCartBtn" onclick="addToCart('productName15','productPrice15','resimler/ütü1-removebg-preview.png')">Sepete Ekle</button>
+</td>
+</tr> 
+
+            </table>
+          
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<button  onclick="goToTop()" id="goTopBtn" title="Sayfanın Başına Git">&#8679;</button>
+
+<script>
+    // Yukarı Çık butonunu göster/gizle
+    window.onscroll = function () {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var goTopBtn = document.getElementById("goTopBtn");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            goTopBtn.style.display = "block";
+        } else {
+            goTopBtn.style.display = "none";
+        }
+    }
+
+    // Yukarı Çık butonuna basıldığında sayfanın en üstüne git
+    function goToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+
+</body>
+</html>
+</body>
+</html>

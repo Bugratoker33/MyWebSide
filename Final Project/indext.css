@@ -1,0 +1,236 @@
+.navbar{
+    /* overflow: hidden;
+    margin-top: 0px;
+   background-color: gray; */
+   background-color: #5b71b5;
+   text-align: center;
+   
+   
+}
+.navbar ul{
+    display: inline-flex;  
+    /* inline flex texleri yan yana gelir  */
+    list-style: none;
+    /* başındaki listler kalktı */
+}
+.navbar ul li{
+
+    width:  150px;
+    margin:15px;
+    padding: 15px;
+
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active, .navbar ul  li:hover{
+    background: #d4c995;
+    border-radius: 100px;
+}
+.navbar .fas{
+ margin-right: 8px;
+
+}
+.sub-menu-1{
+    display: none;
+}
+.navbar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: #5b71b5;
+    margin-top: 15px;
+    margin-left: -15px;
+    font-size: 19px;
+}
+.navbar ul li:hover .sub-menu-1 ul{
+    display: block;
+}
+.navbar ul li:hover .sub-menu-1 ul li{
+
+    width: 150px;
+    padding: 10px;
+    border-bottom:  1px dotted #fff;
+    background: transparent;
+    text-align: left;
+}
+.navbar ul li:hover .sub-menu-1 ul li a:hover{
+    background: #d4c995;
+}
+.fa-caret-right{
+    font-size: 14px;
+    color:#fff;
+  
+
+}
+
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top:  -40px;
+    margin-left: 140px;
+    background: #5b71b5;;
+}
+.img{    /* burayı biraz düzelt!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  
+  
+     background-image: url("resimler/pngtree-free-vector-shopping-cart-realistic-on-white-background-png-image_6742892.png"); 
+    background-size: cover;
+    /* background-color: white; */
+    /* İstenilen boyuta göre arka plan resminin boyutunu ayarlamak için */
+    /* Örneğin, background-size: contain; olarak ayarlayarak resmin tamamının görünmesini sağlayabilirsiniz */
+    background-position: center;
+}
+.anadiv {
+ 
+    flex-direction: column; 
+    display: flex;
+    /* Arka plan resmini tam ekran olarak yaymak için */
+   
+    /* Resmi ortalamak için */
+    /* Diğer background özelliklerini burada ekleyebilirsiniz */
+    /* Örneğin: background-repeat: no-repeat; */
+}
+
+.content {
+     display: flex; 
+    flex: 15px;
+    padding: 20px;
+}
+
+.category {
+    width: 30%;
+}
+.category-header {
+    font-size: 48px; /* Metin boyutu */
+    padding: 10px; /* Metne boşluk ekler */
+    border-radius: 8px; /* Köşeleri yuvarlar */
+   
+    text-transform: uppercase; /* Metni büyük harfe dönüştürür */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge ekler */
+    text-align: center; /* Metni merkeze hizalar */
+    transition: all 0.3s ease; /* Geçiş efekti */
+}
+
+.category-header:hover {
+    transform: scale(1.1); /* Fare üzerine gelindiğinde büyütme efekti */
+    color: #ff6347; /* Fare üzerine gelindiğinde renk değiştirme */
+}
+.category ul {
+    list-style: none; /* Madde işaretlerini gizler */
+    padding: 20px; /* Varsayılan boşlukları sıfırlar */
+}
+
+.category li {
+    margin-bottom: 25px; /* Liste öğeleri arasında boşluk bırakır */
+}
+
+.category li a {
+    text-decoration: none; /* Altı çizgiyi kaldırır */
+    display: inline-block; /* Öğeleri yatay olarak hizalar */
+    padding: 10px 10px; /* Linklerin içerisinde boşluk bırakır */
+    border-radius: 50px; /* Köşeleri yuvarlar */
+    background-color: white; /* Arkaplan rengi */
+    color: #333; /* Metin rengi */
+
+}
+
+.category li a:hover  {
+    background-color: #ccc; /* Fare üzerine gelindiğinde arka plan rengini değiştirir */
+   
+}
+.category i{
+    display: inline;
+    float: right;
+    font-size: 25px;
+}
+
+.product {
+    width: 70%;
+    justify-content: space-around;
+}
+.productimg{
+    display: flex;
+
+}
+.table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing:20px;
+
+}
+.product td{
+    padding: 20px;
+   
+}
+.product h3{
+    color: #333; /* Metnin rengini koyu mavi olarak ayarlar */
+    font-weight: bold; /* Metnin kalınlığını arttırır */
+}
+.product p{
+    color: darkblue; /* Metnin rengini koyu mavi olarak ayarlar */
+    font-weight: bold; /* Metnin kalınlığını arttırır */
+}
+.product li a{
+    font-size: 19px;
+}
+.araba-img{
+    width: 50%;
+    height: auto; /* Resmin oranlarını korumak için */
+   
+}
+
+.sepet {
+    max-height: 200px; /* İstediğiniz maksimum yükseklik */
+    overflow-y: auto; 
+    /* width: 30%;
+    align-self: flex-end; */
+    /* Dikey hizalamayı sağ üste almak için */
+    /* Eğer altta ise align-self: flex-start; olarak ayarlayabilirsiniz */
+}
+.sepet img{
+    width: 125px;
+    height: 125px;
+}
+.divider {
+    width: 1px;
+    background-color: black;
+    /* İstenilen çizgi rengi */
+    margin: 0 10px;
+    /* İstediğiniz boşluk */
+}
+#goTopBtn {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 99;
+font-size: 18px;
+border: none;
+outline: none;
+background-color: #007bff;
+color: white;
+cursor: pointer;
+padding: 15px;
+border-radius: 50%;
+}   
+/* //sepete ekle butonu ayarı  */
+#addToCartBtn {
+    background-color: #007bff; /* Örnek bir varsayılan renk */
+    color: white;
+    width: 80px;
+    height: 50px;
+      border-radius: 20px; /* Kenarları yuvarlak yapar, değer ne kadar büyükse oval o kadar belirgin olur */
+    padding: 10px 20px; 
+    /* Diğer stillendirme özellikleri */
+  }
+  
+  #addToCartBtn:hover {
+    background-color: #0056b3; /* Mouse üzerine gelindiğindeki yeni renk */
+    /* Diğer stillendirme özellikleri */
+   
+  }

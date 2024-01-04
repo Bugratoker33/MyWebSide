@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Web Side</title>
+    <link rel="stylesheet" href="indext.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="indext.js"></script>
+</head>
+<body>
+    <div class="img">
+
+    <CENTER ><i> MY WEB SİDE</i></CENTER>
+    <div class="navbar">
+       <ul>
+
+     <li class="active" >  <a href="indext.html"><i class="fa-solid fa-house"></i> Anasyafa</a></li>  
+      <li> <a href=""> <i class="fas fa-user"></i>  Hakımızda</a>
+     <div class="sub-menu-1">
+       <ul>
+        <li><a href="">Müsyonumuz</a></li>
+        <li><a href="">Vizyonumuz</a></li>
+        <li><a href="">Takımımız</a></li>
+       </ul>
+     </div>
+
+    </li> 
+      <li><a href=""><i class="fas fa-clone"></i>Servisler</a>
+         <div class="sub-menu-1">
+         <ul>
+         <li><a href="">WEB TASARIM</a></li>
+         <li class="hover-me" ><a href="">MARKEET</a> <i class="fas fa-caret-right"></i>
+        <div class="sub-menu-2">
+          <ul>
+            <li><a href="">SEO</a></li>
+            <li><a href="">Sosyal Medya</a></li>
+            <li><a href="">Emali</a></li>
+          </ul>
+        </div>
+    </li>
+         <li class="hover-me" ><a href="">MOBİLE APP</a> <i class="fas fa-caret-right"></i>
+        <div class="sub-menu-2">
+            <ul>
+                <li><a href="">Android app</a></li>
+                <li><a href="">İOS ap</a></li>
+                <li><a href="">Windows app</a></li>
+                <li><a href="">flutter app</a></li>
+                <li><a href="">unity app</a></li>
+            </ul>
+        </div>
+        </li>
+         </ul>
+     </div>
+    </li> 
+      <li><a class="left" href=""><i class="fas fa-users"></i>Müşteriler</a></li>
+      <li> <a class="left" href=""> <i class="fas fa-headset"></i>DESTEK</a></li>
+      <li> <a class="left" href=""><i class="fas fa-lira-sign"></i>FİYATLANDIRMA </a></li>
+      <li> <a class="left" href=""><i class="fas fa-edit"></i>EĞİTİM </a></li>
+      <li> <a class="left" href=""><i class="fas fa-phone"></i>İLETİŞİM </a></li>
+      
+    </ul>
+    </div>
+    <div class="anadiv">
+      <div class="divider"></div>   
+      <div class="sepet">
+        <h1>Sepet</h1>
+        
+        <ul id="sepetListesi"></ul>
+        
+        <div class="divider"></div>   
+      
+        <span id="totalPrice">Toplam Fiyat: 0 TL</span>
+        <div>
+          <button id="addToCartBtn" onclick="satınAl()">Satın Al</button>
+      </div>
+    </div>
+        <div class="divider"></div>   
+        <div class="content">
+          <div class="category">
+            <center class="category-header">Categoris</center> 
+            <ul>
+              <li><a href="araba.html">Car</a><i class="fas fa-car"></i> </li>
+              <li><a href="Computer.html">Computer</a><i class="fa-solid fa-computer"></i> </li>
+              <li><a href="Phone.html">Mobile Phone</a><i class="fa-solid fa-mobile-screen-button"></i> </li>
+              <li><a href="javascript:void(0);" onclick="showNoProductsMessage()">CAMERA</a><i class="fa-solid fa-camera"></i> </li>
+              <!-- <li><a href="">FOTOĞRAF MAKİNESİ </a><i class="fa-solid fa-camera"></i> </li> -->
+              <li><a href="household appliances.HTML">Household products</a><i class="fa-solid fa-blender-phone"></i>  </li>
+            </ul>
+          </div>
+            <div class="divider"></div>   
+            <!-- burası dik çizgi çekiyor -->
+            <div class="product">
+              <center class="category-header">Products</center> 
+              
+              <table class="table" >
+                <colgroup>
+                    <col style="width: 50%; max-width: 50%;">
+                    <col style="width: 50%; max-width: 50%;">
+                </colgroup>
+                <tr>               
+                    <td >
+                      <img src="resimler/spürge1-removebg-preview.png"  id="productImage" class="araba-img">
+                      <h3>Instructor:</h3> 
+                      <h3 id="productName12">Dyson</h3>
+                      <p>Fiyat: <span id="productPrice12"> 5000</span>Tl </p>
+                      <ul style="list-style-type: none;">
+                          <li>Office: CCB216</li>
+                          <li>Email: example@example.com</li>
+                          <li>Hours: Tues 2-3</li>
+                      </ul>
+                      <button  id="addToCartBtn"  onclick="addToCart('productName12','productPrice12','resimler/spürge1-removebg-preview.png')">Sepete Ekle</button>
+                  </td>
+                  <td >
+                    <img src="resimler/koltuk1-removebg-preview.png" alt=""  id="productImage" class="araba-img">
+                    <h3>Instructor:</h3> 
+                    <h3 id="productName13">4'lü Takım koltuk</h3>
+                    <p>Fiyat: <span id="productPrice13"> 35000 </span>Tl </p>
+                    <ul style="list-style-type: none;">
+                        <li>Office: CCB216</li>
+                        <li>Email: example@example.com</li>
+                        <li>Hours: Tues 2-3</li>
+                    </ul>
+                    <button  id="addToCartBtn"  onclick="addToCart('productName13','productPrice13','resimler/koltuk1-removebg-preview.png')">Sepete Ekle</button>
+                </td>
+              </tr> 
+              
+              <tr>               
+               <td >
+                 <img src="resimler/blendır1-removebg-preview.png"  id="productImage" class="araba-img">
+                 <h3>Instructor:</h3> 
+                 <h3 id="productName14">Blendır</h3>
+                 <p>Fiyat: <span id="productPrice14"> 450 </span>Tl </p>
+                 <ul style="list-style-type: none;">
+                     <li>Office: CCB216</li>
+                     <li>Email: example@example.com</li>
+                     <li>Hours: Tues 2-3</li>
+                 </ul>
+                 <button  id="addToCartBtn"  onclick="addToCart('productName14','productPrice14','resimler/blendır1-removebg-preview.png')">Sepete Ekle</button>
+              </td>
+              <td >
+               <img src="resimler/ütü1-removebg-preview.png" alt=""  id="productImage" class="araba-img">
+               <h3>Instructor:</h3> 
+               <h3 id="productName15">Ütü</h3>
+               <p>Fiyat: <span id="productPrice15"> 1250 </span>Tl </p>
+               <ul style="list-style-type: none;">
+                   <li>Office: CCB216</li>
+                   <li>Email: example@example.com</li>
+                   <li>Hours: Tues 2-3</li>
+               </ul>
+               <button  id="addToCartBtn"  onclick="addToCart('productName15','productPrice15','resimler/ütü1-removebg-preview.png')">Sepete Ekle</button>
+              </td>
+              </tr> 
+            </table>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
